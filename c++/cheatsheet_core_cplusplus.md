@@ -1,5 +1,146 @@
 # C++ Core Concepts Cheatsheet
 
+
+```mermaid
+graph LR
+    A[C++ Core Concepts]
+
+    %% Dasar
+    subgraph DASAR ["Dasar-Dasar C++"]
+        B1[First Steps - Struktur program & main]
+        B2[Comments - // dan /* */]
+        B3[Errors and Warnings]
+        B4[Statements and Functions]
+        B5[Data Input & Output - std::cin/std::cout]
+    end
+    A --> DASAR
+
+    %% Variabel & Tipe
+    subgraph VARIABEL ["Variabel & Tipe Data"]
+        C1[Variables & Datatypes]
+        C2[Number Systems - binary octal decimal hex]
+        C3[Integer Types - int short long long]
+        C4[Fractional Numbers - float double]
+        C5[Booleans - bool]
+        C6[Characters & Text - char std::string]
+        C7[auto]
+    end
+    A --> VARIABEL
+
+    %% Operasi
+    subgraph OPERASI ["Operasi pada Data"]
+        D1[Basic Ops + - * / %]
+        D2[Precedence & Associativity]
+        D3[Increment & Decrement ++ --]
+        D4[Relational & Logical Operators]
+        D5[Output Formatting setw setprecision]
+    end
+    A --> OPERASI
+
+    %% Literal & Konstanta
+    subgraph LITERAL ["Literal & Konstanta"]
+        E1[Literals]
+        E2[Constants - const]
+        E3[constexpr]
+    end
+    A --> LITERAL
+
+    %% Konversi & Overflow
+    subgraph KONVERSI ["Konversi & Overflow"]
+        F1[Implicit & Explicit Conversions - static_cast]
+        F2[Overflow & Underflow]
+    end
+    A --> KONVERSI
+
+    %% Bitwise
+    subgraph BITWISE ["Operator Bitwise"]
+        G1[Bitwise Operators - & or ^ ~ << >>]
+        G2[Masks]
+    end
+    A --> BITWISE
+
+    %% Scope & Lifetime
+    subgraph SCOPE ["Scope & Lifetime"]
+        H1[Variable Scope]
+        H2[Lifetime]
+    end
+    A --> SCOPE
+
+    %% Kontrol Alur
+    subgraph FLOW ["Kontrol Alur"]
+        I1[if else if else]
+        I2[switch]
+        I3[Ternary - condition ? val_true : val_false]
+    end
+    A --> FLOW
+
+    %% Loops
+    subgraph LOOPS ["Perulangan / Loops"]
+        J1[for]
+        J2[while]
+        J3[do-while]
+        J4[Range-based for]
+        J5[break & continue]
+    end
+    A --> LOOPS
+
+    %% Array, Pointer, Reference
+    subgraph ARRAY ["Array, Pointer, Reference"]
+        K1[Arrays]
+        K2[Pointers]
+        K3[Dynamic Memory - new delete]
+        K4[References]
+    end
+    A --> ARRAY
+
+    %% String
+    subgraph STRING ["String & Manipulasi Karakter"]
+        L1[C-Strings]
+        L2[std::string]
+        L3[std::string_view]
+    end
+    A --> STRING
+
+    %% Functions
+    subgraph FUNC ["Fungsi"]
+        M1[Declarations & Definitions]
+        M2[Pass-by-Value]
+        M3[Pass-by-Reference]
+        M4[Pass-by-Pointer]
+        M5[Function Overloading]
+        M6[Lambda Functions]
+        M7[Function Templates]
+    end
+    A --> FUNC
+
+    %% OOP
+    subgraph OOP ["Object-Oriented Programming"]
+        N1[Classes]
+        N2[Constructors]
+        N3[Friends]
+        N4[const & static Members]
+        N5[Inheritance]
+        N6[Polymorphism]
+        N7[Operator Overloading]
+    end
+    A --> OOP
+
+    %% Modern & Lanjutan
+    subgraph MODERN ["Konsep Modern & Lanjutan"]
+        O1[Namespaces]
+        O2[Smart Pointers - unique_ptr shared_ptr]
+        O3[Exceptions - try catch throw]
+        O4[Templates - Class & Function]
+        O5[Move Semantics]
+        O6[STL - Containers Algorithms Iterators]
+        O7[Ranges C++20]
+        O8[Modules C++20]
+        O9[Coroutines C++20]
+    end
+    A --> MODERN
+```
+
+
 ## 1. Dasar-Dasar C++
 - **First Steps**: Struktur dasar program C++, fungsi `main`, kompilasi.
 - **Comments**: Menulis komentar dengan `//` (single-line) dan `/* */` (multi-line).
